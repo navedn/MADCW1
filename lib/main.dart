@@ -105,13 +105,13 @@ class _MyHomePageState extends State<MyHomePage> {
           const SizedBox(height: 20),
           // Conditionally display the image based on the _changeto2ndImage flag
           _changeto2ndImage
-              ? Image.network(
-                  'https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=800', // Second image
+              ? Image.asset(
+                  'assets/images/Moon.jpg', // Second image
                   width: 400,
                   height: 400,
                 )
-              : Image.network(
-                  'https://images.pexels.com/photos/247600/pexels-photo-247600.jpeg?auto=compress&cs=tinysrgb&w=800', // First image
+              : Image.asset(
+                  'assets/images/Sun.jpg', // First image
                   width: 400,
                   height: 400,
                 ),
